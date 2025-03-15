@@ -1,0 +1,11 @@
+body{
+    background-color: antiquewhite;
+}
+
+p{
+ font-family: 'Courier New', Courier, monospace;
+ display: flex;
+ flex-direction: column;
+ align-items: center;  
+ margin-top: 10%; 
+}
