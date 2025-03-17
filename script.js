@@ -62,10 +62,19 @@ function revelarResposta(resp){
        terceiraAfirmacao.style.display = "none";
         break
 
-
-
-       
     }
     }
 
+// Dia 2
 
+let nome , idade , curso
+
+function armazenarValores(){
+ nome = document.getElementById("nome").value
+ idade = document.getElementById("idade").value
+ curso = document.getElementById("LP").value
+ console.log( nome +' '+ idade+ ' ' + curso)
+ document.getElementById("frase").innerHTML ='"Olá '+ nome +', você tem '+idade+' anos e já está aprendendo '+ curso + '!"'
+ alert('"Olá '+ nome +', você tem '+idade+' anos e já está aprendendo '+ curso + '!"')
+
+}
