@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>
-            Desafio 7 dias  
-        </title>       
-        <meta charset="UTF-8">
+
+<head>
+    <title>
+        Desafio 7 dias
+    </title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="stilo.css">
-    </head>     
-    <body>
-<p id="primeiraAfirmacao"> </p>
+</head>
 
-<p id="segundaAfirmacao"> </p>
-    
-<p id="terceiraAfirmacao"> </p>
+<body>
+    <div class="tituloDesafio">
+        <h1>Desafio 7 dias dayCode</h1>
+    </div>
+    <div class="dia1">
+        <h3>Dia 1</h3>
+        <h5>
+            A tarefa é reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça
+            sentido e sem erros:
+        </h5>
+        <h6>Passe o mouse na aréa de em destaque para ver a resposta...</h6>
+        <p class="comparacao">
+            let numeroUm = 1<br>
+            let stringUm = '1' <br>
+            let numeroTrinta = 30<br>
+            let stringTrinta = '30'<br>
+            let numeroDez = 10<br>
+            let stringDez = '10'<br>
+        </p>
 
-    <script type="text/javascript" src="script.js"  > </script>
-    </body>
+        <p class="comparacao">
+            if (<b id="correcao" onmouseover="revelarResposta(1)" onmouseout="ocultarResposta(1)">COMPARAR O numeroUm e a stringUm</b>) { <br>
+              console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')<br>
+            } else {<br>
+              console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')
+            } 
+        </p>   
+        <p id="primeiraAfirmacao" class="resposta"> </p>
+        <p class="comparacao">
+            if (<b id="correcao2" onmouseover="revelarResposta(2)" onmouseout="ocultarResposta(2)">COMPARAR O numeroTrinta e a stringTrinta</b>) { <br>
+              console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')<br>
+            } else { <br>
+              console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo') }              
+        </p>
+        <p id="segundaAfirmacao" class="resposta"> </p>
+        
+        <p class="comparacao">
+
+            if (<b id="correcao3" onmouseover="revelarResposta(3)" onmouseout="ocultarResposta(3)">COMPARAR O numeroDez e a stringDez</b>) { <br>
+              console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes') <br>
+            } else {
+              console.log('As variáveis numeroDez e stringDez não tem o mesmo valor') 
+            }
+        </p>
+        
+        <p id="terceiraAfirmacao" class="resposta"> </p>
+    </div>
+    <script type="text/javascript" src="script.js"> </script>
+ </body>
+
 </html>
-
-

@@ -25,3 +25,47 @@ if (numeroDez == stringDez) {
 } else {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
 }
+
+function revelarResposta(resp){
+  switch(resp){
+    case 1: 
+    document.getElementById("correcao").innerHTML ='numeroUm !== stringUm'
+    primeiraAfirmacao.style.display = "block"
+    break
+
+    case 2: 
+    document.getElementById("correcao2").innerHTML ='numeroTrinta === stringTrinta'
+    segundaAfirmacao.style.display = "block"
+    break
+
+    case 3: 
+    document.getElementById("correcao3").innerHTML ='numeroDez == stringDez'
+    terceiraAfirmacao.style.display = "block"
+    break
+
+  }
+
+ }
+
+  function ocultarResposta(resp){
+      switch(resp){
+      case 1: document.getElementById("correcao").innerHTML ='COMPARAR O numeroUm e a stringUm'
+      primeiraAfirmacao.style.display = "none";
+       break
+       
+       case 2: document.getElementById("correcao2").innerHTML ='COMPARAR O numeroTrinta e a stringTrinta'
+       segundaAfirmacao.style.display = "none";
+        break
+
+       
+       case 3: document.getElementById("correcao3").innerHTML ='COMPARAR O numeroDez e a stringDez'
+       terceiraAfirmacao.style.display = "none";
+        break
+
+
+
+       
+    }
+    }
+
+
