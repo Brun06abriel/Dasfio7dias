@@ -35,3 +35,20 @@ main{
     color: green;
     display:  none;
 }
+
+.escolhaCarreira{
+    border: 2px solid salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.opcoesFront{
+    display: none;
+}
+
+
+.opcoesBack{
+    display: none;
+}

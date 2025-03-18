@@ -67,7 +67,7 @@ function revelarResposta(resp){
 
 // Dia 2
 
-let nome , idade , curso
+let nome , idade , curso , areaescolhida, linguagem
 
 function armazenarValores(){
  nome = document.getElementById("nome").value
@@ -77,4 +77,62 @@ function armazenarValores(){
  document.getElementById("frase").innerHTML ='"Olá '+ nome +', você tem '+idade+' anos e já está aprendendo '+ curso + '!"'
  alert('"Olá '+ nome +', você tem '+idade+' anos e já está aprendendo '+ curso + '!"')
 
+}
+
+//dia 3
+
+
+function selecionarFront(){
+  opcaoBack.style.display='none'
+  opcaoFront.style.display='block'
+  areaescolhida = 'Front-End'
+}
+
+function selecionarBack(){
+  opcaoFront.style.display='none'
+  opcaoBack.style.display='block'
+  areaescolhida = 'Back-End'
+}
+
+function especializacao(esc){
+  if(esc == 1){
+    alert('Voce escolheu se especializar em '+ areaescolhida +', Parabéns!')
+  }else if(esc == 2){
+    alert('Voce escolheu se tornar programador Fullstack, Parabéns!')
+  }
+
+}
+
+function adicionarTecnologia(){
+  linguagem = String(window.prompt("Insira a tecnologia que deseja aprender","")).toLowerCase();
+  
+  return linguagem
+  
+}
+
+document.getElementById("aprender").onclick  = function (e){
+  e.preventDefault();
+ alert("Linguagem escolhida: " + adicionarTecnologia());
+
+if(linguagem === "java"){
+  alert('Java - \n Muito usado em back-end, aplicativos Android e sistemas corporativos.') 
+}else if(linguagem === "javascript"){
+  alert('JavaScript - \n Essencial para desenvolvimento web, tanto no front-end quanto no back-end (Node.js).') 
+}else if(linguagem === "python"){
+  alert('Python - \n Versátil, usado em automação, ciência de dados, inteligência artificial e desenvolvimento web.') 
+}else if(linguagem === "c#"){
+  alert('C# - \n Popular em desenvolvimento de softwares corporativos e jogos com Unity.') 
+}else if(linguagem === "sql"){
+  alert('SQL - \n Linguagem para gerenciamento e manipulação de bancos de dados.') 
+}else if(linguagem === "php"){
+  alert('PHP - \n Amplamente utilizado no desenvolvimento web, especialmente em back-end de sites.') 
+}
+ 
+console.log(linguagem)
+} 
+
+
+
+if(linguagem == "java"){
+  alert('linguagem JAVA A melhor em para trabalhar com POO') 
 }
