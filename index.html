@@ -14,135 +14,170 @@
         <h1>Desafio 7 dias dayCode</h1>
     </div>
     <main>
-    <div class="dia1">
-        <h3>Dia 1</h3>
-        <h5>
-            A tarefa é reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça
-            sentido e sem erros:
-        </h5>
-        <h6>Passe o mouse na aréa de em destaque para ver a resposta...</h6>
-        <p class="comparacao">
-            let numeroUm = 1<br>
-            let stringUm = '1' <br>
-            let numeroTrinta = 30<br>
-            let stringTrinta = '30'<br>
-            let numeroDez = 10<br>
-            let stringDez = '10'<br>
-        </p>
+        <div class="dia1">
+            <h3>Dia 1</h3>
+            <h5>
+                A tarefa é reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que
+                faça
+                sentido e sem erros:
+            </h5>
+            <h6>Passe o mouse na aréa de em destaque para ver a resposta...</h6>
+            <p class="comparacao">
+                let numeroUm = 1<br>
+                let stringUm = '1' <br>
+                let numeroTrinta = 30<br>
+                let stringTrinta = '30'<br>
+                let numeroDez = 10<br>
+                let stringDez = '10'<br>
+            </p>
 
-        <p class="comparacao">
-            if (<b id="correcao" onmouseover="revelarResposta(1)" onmouseout="ocultarResposta(1)">COMPARAR O numeroUm e a stringUm</b>) { <br>
-              console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')<br>
-            } else {<br>
-              console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')
-            } 
-        </p>   
-        <p id="primeiraAfirmacao" class="resposta"> </p>
-        <p class="comparacao">
-            if (<b id="correcao2" onmouseover="revelarResposta(2)" onmouseout="ocultarResposta(2)">COMPARAR O numeroTrinta e a stringTrinta</b>) { <br>
-              console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')<br>
-            } else { <br>
-              console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo') }              
-        </p>
-        <p id="segundaAfirmacao" class="resposta"> </p>
-        
-        <p class="comparacao">
+            <p class="comparacao">
+                if (<b id="correcao" onmouseover="revelarResposta(1)" onmouseout="ocultarResposta(1)">COMPARAR O
+                    numeroUm e a stringUm</b>) { <br>
+                console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')<br>
+                } else {<br>
+                console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')
+                }
+            </p>
+            <p id="primeiraAfirmacao" class="resposta"> </p>
+            <p class="comparacao">
+                if (<b id="correcao2" onmouseover="revelarResposta(2)" onmouseout="ocultarResposta(2)">COMPARAR O
+                    numeroTrinta e a stringTrinta</b>) { <br>
+                console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')<br>
+                } else { <br>
+                console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo') }
+            </p>
+            <p id="segundaAfirmacao" class="resposta"> </p>
 
-            if (<b id="correcao3" onmouseover="revelarResposta(3)" onmouseout="ocultarResposta(3)">COMPARAR O numeroDez e a stringDez</b>) { <br>
-              console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes') <br>
-            } else {
-              console.log('As variáveis numeroDez e stringDez não tem o mesmo valor') 
-            }
-        </p>
-        
-        <p id="terceiraAfirmacao" class="resposta"> </p>
-    </div>
-    <div class="dia1">
-        <h3>Dia 2</h3>
-        <h5>
-            Tarefa: entender como capturar e armazenar valores dentro de variáveis.
-        </h5>
-        <p>
-            Desenvolver um programa que deve pedir para o usuário responder 3 perguntas:<br>
-            - Qual o seu nome? <br>
-            - Quantos anos você tem?<br>
-            - Qual linguagem de programação você está estudando? <br>
+            <p class="comparacao">
+
+                if (<b id="correcao3" onmouseover="revelarResposta(3)" onmouseout="ocultarResposta(3)">COMPARAR O
+                    numeroDez e a stringDez</b>) { <br>
+                console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes') <br>
+                } else {
+                console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
+                }
+            </p>
+
+            <p id="terceiraAfirmacao" class="resposta"> </p>
+        </div>
+
+        <div class="dia1">
+            <h3>Dia 2</h3>
+            <h5>
+                Tarefa: entender como capturar e armazenar valores dentro de variáveis.
+            </h5>
+            <p>
+                Desenvolver um programa que deve pedir para o usuário responder 3 perguntas:<br>
+                - Qual o seu nome? <br>
+                - Quantos anos você tem?<br>
+                - Qual linguagem de programação você está estudando? <br>
             </p>
             <p>
-            À medida que as perguntas forem sendo feitas, a pessoa que estiver usando o programa deve responder cada uma delas.
-            No final, o sistema irá atualiza a seguinte mensagem: <br>
-            <br> <b id="frase">"Olá [nome], você tem [idade] anos e já está aprendendo [linguagem]!"</b>
+                À medida que as perguntas forem sendo feitas, a pessoa que estiver usando o programa deve responder cada
+                uma delas.
+                No final, o sistema irá atualiza a seguinte mensagem: <br>
+                <br> <b id="frase">"Olá [nome], você tem [idade] anos e já está aprendendo [linguagem]!"</b>
             </p>
-        <p class="forms">
-            <label>Qual o seu nome?<br> <input type="text" id="nome"> </label> <br>
-            <label>Quantos anos você tem?<br> <input type="text" id="idade"> </label> <br>
-            <label>Qual linguagem de programação você está estudando?<br> <input type="text" id="LP" > </label> <br>  
-        </p>
-        <input type="button" onclick="armazenarValores()" value="SALVAR INFORMAÇÕES">
-</div>
-<div class="dia1">
-    <h3>Dia 3</h3>
-    <h5>
-        Seu desafio de hoje é criar os destinos possíveis de um jogo, em que o usuário consiga escolher:
-    </h5>
-    <p>
-        <ol>
-<li>Se quer seguir para área de Front-End ou seguir para a área de Back-End.</li>
+            <p class="forms">
+                <label>Qual o seu nome?<br> <input type="text" id="nome"> </label> <br>
+                <label>Quantos anos você tem?<br> <input type="text" id="idade"> </label> <br>
+                <label>Qual linguagem de programação você está estudando?<br> <input type="text" id="LP"> </label> <br>
+            </p>
+            <input type="button" onclick="armazenarValores()" value="SALVAR INFORMAÇÕES">
+        </div>
 
-<li>Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de Back-End, poderá aprender C# ou aprender Java.</li>
+        <div class="dia1">
+            <h3>Dia 3</h3>
+            <h5>
+                Seu desafio de hoje é criar os destinos possíveis de um jogo, em que o usuário consiga escolher:
+            </h5>
+            <p>
+            <ol>
+                <li>Se quer seguir para área de Front-End ou seguir para a área de Back-End.</li>
 
-<li>Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack.
-    Você deve exibir na tela uma mensagem específica para cada escolha. </li>
+                <li>Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de
+                    Back-End, poderá aprender C# ou aprender Java.</li>
 
-<li>Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer.
-    Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar respondendo ok para a pergunta:
-    “Tem mais alguma tecnologia que você gostaria de aprender?”, continue apresentando para ela o Prompt, para que ela complete o nome da tecnologia em questão.
-    E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.</li>
-</ol>
-O importante é que a pessoa que estiver jogando possa sempre escolher qual decisão tomar para conseguir aprender e se desenvolver na área de programação.<br>
+                <li>Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se
+                    especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack.
+                    Você deve exibir na tela uma mensagem específica para cada escolha. </li>
 
-Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser na lista de aprendizado.
-        </p>
-      
-     <div class="escolhaCarreira">
-        <form>
-            <h4>Escolha a área inicial:</h4>
-            <label>Front-End
-                <input type="radio" id="front" value="FrontEnd" name="areaInicial" onclick="selecionarFront()" >
-            </label>      <br>     
-            <label>Back-End
-                <input type="radio" value="BackEnd" name="areaInicial" onclick="selecionarBack()">
-</label> <br>
-<label>Foco de área: 
+                <li>Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de
+                    conhecer.
+                    Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar
+                    respondendo ok para a pergunta:
+                    “Tem mais alguma tecnologia que você gostaria de aprender?”, continue apresentando para ela o
+                    Prompt, para que ela complete o nome da tecnologia em questão.
+                    E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.</li>
+            </ol>
+            O importante é que a pessoa que estiver jogando possa sempre escolher qual decisão tomar para conseguir
+            aprender e se desenvolver na área de programação.<br>
 
-    <select name="Especializacao" id="opcaoFront" class="opcoesFront">
-        <option > React </option>
-        <option > Vue.  </option>
-    </select>
+            Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser na lista
+            de aprendizado.
+            </p>
 
-    <select name="Especializacao" id="opcaoBack" class="opcoesFront">
-        <option > C# </option>
-        <option > JAVA  </option>
-    </select>
-</label>
+            <div class="escolhaCarreira">
+                <form>
+                    <h4>Escolha a área inicial:</h4>
+                    <label>Front-End
+                        <input type="radio" id="front" value="FrontEnd" name="areaInicial" onclick="selecionarFront()" checked>
+                    </label> <br>
+                    <label>Back-End
+                        <input type="radio" value="BackEnd" name="areaInicial" onclick="selecionarBack()">
+                    </label> <br>
+                    
+                    <label> Com foco em:
+                        <select name="Especializacao" id="opcaoFront" class="opcoesFront" >
+                            <option> React </option>
+                            <option> Vue. </option>
+                        </select>
 
-    <input type="button" value="Especialização na área escolhida" onclick="especializacao(1)">
+                        <select name="Especializacao" id="opcaoBack" class="opcoesBack">
+                            <option> C# </option>
+                            <option> JAVA </option>
+                        </select> 
+                    </label>
 
-<input type="button" value="Especialização em Fullstack" onclick="especializacao(2)"> <br>
+                    <input type="button" value="Especialização na área escolhida" onclick="especializacao(1)">
+
+                    <input type="button" value="Especialização em Fullstack" onclick="especializacao(2)"> <br>
 
 
-<input type="button" id="aprender" value="Quero aprender outras tecnologias" >
+                    <input type="button" id="aprender" value="Quero aprender outras tecnologias">
 
-        </form>
+                </form>
 
 
-     </div>   
-</div>
+            </div> 
+        </div>
 
-</main>
+        <div class="dia1">
+            <h3>Dia 4</h3>
+            <h5>
+                Criar um programa que comece com um valor específico pré-definido entre 0 a 10 para o número que você
+                vai adivinhar.
+            </h5>
+            <p>
+                Em seguida, o programa vai perguntar para você qual o valor que você deseja chutar e, caso você acerte,
+                ele irá te parabenizar.
+                <br> Caso erre, ele vai te dar mais 2 tentativas.
+                No fim, caso você não acerte nenhuma vez, ele vai imprimir qual era o número inicial.<br>
+                <b>Depois que o programa estiver funcionando, tente usar um número randômico em vez de um número
+                    pré-definido.</b>
+            </p>
+
+            <label> Tente advinhar o numero secreto:
+                <input type="text" id="tentativa"> <input type="button" id="chute" value="Chutar" >
+                
+            </label>
+        </div>
+        
+    </main>
 
 
     <script type="text/javascript" src="script.js"> </script>
- </body>
+</body>
 
 </html>
