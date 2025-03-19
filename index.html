@@ -122,14 +122,15 @@
                 <form>
                     <h4>Escolha a área inicial:</h4>
                     <label>Front-End
-                        <input type="radio" id="front" value="FrontEnd" name="areaInicial" onclick="selecionarFront()" checked>
+                        <input type="radio" id="front" value="FrontEnd" name="areaInicial" onclick="selecionarFront()"
+                            checked>
                     </label> <br>
                     <label>Back-End
                         <input type="radio" value="BackEnd" name="areaInicial" onclick="selecionarBack()">
                     </label> <br>
-                    
+
                     <label> Com foco em:
-                        <select name="Especializacao" id="opcaoFront" class="opcoesFront" >
+                        <select name="Especializacao" id="opcaoFront" class="opcoesFront">
                             <option> React </option>
                             <option> Vue. </option>
                         </select>
@@ -137,7 +138,7 @@
                         <select name="Especializacao" id="opcaoBack" class="opcoesBack">
                             <option> C# </option>
                             <option> JAVA </option>
-                        </select> 
+                        </select>
                     </label>
 
                     <input type="button" value="Especialização na área escolhida" onclick="especializacao(1)">
@@ -150,7 +151,7 @@
                 </form>
 
 
-            </div> 
+            </div>
         </div>
 
         <div class="dia1">
@@ -169,13 +170,72 @@
             </p>
 
             <label> Tente advinhar o numero secreto:
-                <input type="text" id="tentativa"> <input type="button" id="chute" value="Chutar" >
-                
+                <input type="text" id="tentativa"> <input type="button" id="chute" value="Chutar">
+
             </label>
         </div>
-        
+        <div class="dia1">
+            <h3>Dia 5</h3>
+            <h5>
+                Lista de mercado
+            </h5>
+            <p>
+                Criar um programa em Javascript que perguntará se você deseja adicionar uma comida na sua lista de
+                compras,<br>
+                e você deve poder responder com <b>sim</b> ou <b>não</b>. </p>
+
+            <p>Em seguida, ele perguntará qual comida você deseja inserir, e você digitará o nome dela, como por exemplo
+                <i>batata</i>. <br>
+                Depois, ele deverá perguntar em qual categoria essa comida se encaixa, com algumas opções já
+                pré-definidas,
+                como frutas, laticínios, congelados, doces e o que mais você achar interessante.
+                Assim, você poderá separar tudo no seu devido grupo.<br>
+
+                Por fim, caso você não queira mais adicionar nada na lista de compras e responder não na primeira
+                pergunta,
+                ele irá exibir uma lista com todos os itens agrupados, da seguinte forma:<br>
+
+                Caso você adicione na sua lista:<br>
+                <i>banana, leite em pó, tomate, leite vegetal, chiclete, bala de ursinho, maçã, uva, abacate e leite de
+                    vaca</i> <br>
+
+                O programa deverá imprimir, por exemplo:<br>
+
+                Lista de compras:<br>
+                Frutas: banana, tomate, maçã, uva, abacate <br>
+                Laticínios: leite vegetal, leite de vaca, leite em pó <br>
+                Congelados:<br>
+                Doces: chiclete e bala de ursinho<br>
+            </p>
+
+            <input type="button" id="tentativa" value="Começar lista de compras" onclick="alterarLista()">
+
+            <dl id="listaItens">
+                <h2>Modo Lista Detalhada</h2>
+                <dt id="categoriaFrutas">FRUTAS</dt>
+                
+                <dt id="categoriaLaticinios">LATICIÍNIOS</dt>               
+
+                <dt id="categoriaCongelados">CONGELADOS</dt>
+                
+                <dt id="categoriaDoces">DOCES</dt>              
+
+                <dt id="categoriaLimpeza">LIMPEZA</dt>
+                
+                <dt id="categoriaPets">PETS</dt>
+                
+                <dt id="categoriaOutros">OUTROS</dt>
+                
+            </dl>
+            <div id="listaTexto">
+
+            </div>
+        </div>
+
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="script.js"> </script>
 </body>

@@ -52,3 +52,11 @@ main{
 .opcoesBack{
     display: none;
 }
+
+.dia1 dl{
+    display: none;
+    
+}
+.listaTexto{
+    display: flex;
+}
