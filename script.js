@@ -231,72 +231,72 @@ function adicionarItem() {
 function adicionarFruta(frt) {
   frutas.unshift(frt)
   var text = frt
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaFrutas").appendChild(li);
 }
 
 function adicionarLaticinios(ltc) {
   laticinios.unshift(ltc)
   var text = ltc
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaLaticinios").appendChild(li);
 }
 
 function adicionarCongelados(item) {
   congelados.unshift(item)
   var text = item
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaCongelados").appendChild(li);
 }
 
 function adicionarDoces(item) {
   doces.unshift(item)
   var text = item
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaDoces").appendChild(li);
 }
 
 function adicionarLimpeza(item) {
   limpeza.unshift(item)
   var text = item
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaLimpeza").appendChild(li);
 }
 
 function adicionarPets(item) {
   pets.unshift(item)
   var text = item
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaPets").appendChild(li);
 }
 function adicionarOutros(item) {
   outros.unshift(item)
   var text = item
-  var li = document.createElement("dd"); // cria a <li>
-  var t = document.createTextNode(text); // cria o nó de texto na <li>
-  li.appendChild(t); // adiciona o texto na <li> 
+  var li = document.createElement("dd");
+  var t = document.createTextNode(text);
+  li.appendChild(t);
   document.getElementById("categoriaOutros").appendChild(li);
 }
 
 function mostrarLista() {
   listaItens.style.display = 'block'
 
- 
+
 }
 
-function mostrarTexto(){
+function mostrarTexto() {
   var textF = frutas
   var textL = laticinios
   var textC = congelados
@@ -304,57 +304,183 @@ function mostrarTexto(){
   var textLim = limpeza
   var textPets = pets
   var textO = outros
-  
-  var paragrF = document.createElement("p"); // cria a <li>
-  var paragrL = document.createElement("p"); // cria a <li>
-  var paragrC = document.createElement("p"); // cria a <li>
-  var paragrD = document.createElement("p"); // cria a <li>
-  var paragrLimpeza = document.createElement("p"); // cria a <li>
-  var paragrPets = document.createElement("p"); // cria a <li>
-  var paragrO = document.createElement("p"); // cria a <li>
 
-  var F = document.createTextNode("Frutas: " + textF ); // cria o nó de texto na <li>
-  var L = document.createTextNode("Laticinios: " + textL); // cria o nó de texto na <li>
-  var C = document.createTextNode("Congelados: " + textC); // cria o nó de texto na <li>
-  var D = document.createTextNode("Doces: " + textD); // cria o nó de texto na <li>
-  var Limp = document.createTextNode("Limpeza: " + textLim); // cria o nó de texto na <li>
-  var Pets = document.createTextNode("Pets: " + textPets); // cria o nó de texto na <li>
-  var O = document.createTextNode("Outros: " + textO); // cria o nó de texto na <li>
-  
-  paragrF.appendChild(F); // adiciona o texto na <li> 
-  paragrL.appendChild(L); // adiciona o texto na <li> 
-  
-  paragrC.appendChild(C); // adiciona o texto na <li> 
-  paragrD.appendChild(D); // adiciona o texto na <li> 
-  
-  paragrLimpeza.appendChild(Limp); // adiciona o texto na <li> 
-  paragrPets.appendChild(Pets); // adiciona o texto na <li> 
-  
-  paragrO.appendChild(O); // adiciona o texto na <li> 
-  
+  var paragrF = document.createElement("p"); // cria elemento
+  var paragrL = document.createElement("p");
+  var paragrC = document.createElement("p");
+  var paragrD = document.createElement("p");
+  var paragrLimpeza = document.createElement("p");
+  var paragrPets = document.createElement("p");
+  var paragrO = document.createElement("p");
+
+  var F = document.createTextNode("Frutas: " + textF); // cria o nó de texto no <elemnto>
+  var L = document.createTextNode("Laticinios: " + textL);
+  var C = document.createTextNode("Congelados: " + textC);
+  var D = document.createTextNode("Doces: " + textD);
+  var Limp = document.createTextNode("Limpeza: " + textLim);
+  var Pets = document.createTextNode("Pets: " + textPets);
+  var O = document.createTextNode("Outros: " + textO);
+
+  paragrF.appendChild(F); // adiciona o texto no <elemento> 
+  paragrL.appendChild(L);
+  paragrC.appendChild(C);
+  paragrD.appendChild(D);
+  paragrLimpeza.appendChild(Limp);
+  paragrPets.appendChild(Pets);
+  paragrO.appendChild(O);
+
   document.getElementById("listaTexto").appendChild(paragrF);
   document.getElementById("listaTexto").appendChild(paragrL);
   document.getElementById("listaTexto").appendChild(paragrC);
-  document.getElementById("listaTexto").appendChild(paragrD); 
+  document.getElementById("listaTexto").appendChild(paragrD);
   document.getElementById("listaTexto").appendChild(paragrLimpeza);
   document.getElementById("listaTexto").appendChild(paragrPets);
   document.getElementById("listaTexto").appendChild(paragrO);
-
 
 }
 
 
 
 function alterarLista() {
-  
+
   resp = prompt("Deseja adicionar algum item a lista?")
   if (resp == "sim" || resp == "s") {
     adicionarItem()
   } else if (resp == "nao" || resp == "n") {
-    mostrarLista()
+    // mostrarLista()
     mostrarTexto()
   }
+  else if (resp == "excluir" || resp == "e") {
+    mostrarTextoExc()
+  }
+
+}
+
+function prencherLista() {
+  if (frutas.length == 0) {
+    frutas.unshift("Abacate","Banana","Mamão")
+    itensAdicionados.unshift("Abacate","Banana","Mamão")
+  }
+  if (laticinios.length == 0) {
+
+    laticinios.unshift("Requeijão","Leite","Leite Fermentado")
+    itensAdicionados.unshift("Requeijão","Leite","Leite Fermentado")
+  }
+  if (congelados.length == 0) {
+    congelados.unshift("Batata", "Ervilha")
+    itensAdicionados.unshift("Batata", "Ervilha")
+  }
+  if (doces.length == 0) {
+    doces.unshift("Chocolate","Paçoca")
+    itensAdicionados.unshift("Chocolate","Paçoca")
+  }
+  if (limpeza.length == 0) {
+    limpeza.unshift("Sabão em pó","Detergente")
+    itensAdicionados.unshift("Sabão em pó","Detergente")
+  }
+  if (pets.length == 0) {
+    pets.unshift("Ração Gato","Areia Gato")
+    itensAdicionados.unshift("Ração Gato", "Areia Gato")
+  }
+  if (outros.length == 0) {
+    outros.unshift("Ayr Fryer","Panela")
+    itensAdicionados.unshift("Ayr Fryer","Panela")
+  }
+  mostrarTextoExc()
+}
 
 
+
+function mostrarTextoExc() {
+  listaTextoExc.innerHTML = ' '
+  var textF = frutas
+  var textL = laticinios
+  var textC = congelados
+  var textD = doces
+  var textLim = limpeza
+  var textPets = pets
+  var textO = outros
+
+  var paragrF = document.createElement("p"); // cria elemento
+  var paragrL = document.createElement("p");
+  var paragrC = document.createElement("p");
+  var paragrD = document.createElement("p");
+  var paragrLimpeza = document.createElement("p");
+  var paragrPets = document.createElement("p");
+  var paragrO = document.createElement("p");
+
+  var F = document.createTextNode("Frutas: " + textF); // cria o nó de texto no <elemnto>
+  var L = document.createTextNode("Laticinios: " + textL);
+  var C = document.createTextNode("Congelados: " + textC);
+  var D = document.createTextNode("Doces: " + textD);
+  var Limp = document.createTextNode("Limpeza: " + textLim);
+  var Pets = document.createTextNode("Pets: " + textPets);
+  var O = document.createTextNode("Outros: " + textO);
+
+  paragrF.appendChild(F); // adiciona o texto no <elemento> 
+  paragrL.appendChild(L);
+  paragrC.appendChild(C);
+  paragrD.appendChild(D);
+  paragrLimpeza.appendChild(Limp);
+  paragrPets.appendChild(Pets);
+  paragrO.appendChild(O);
+
+  document.getElementById("listaTextoExc").appendChild(paragrF);
+  document.getElementById("listaTextoExc").appendChild(paragrL);
+  document.getElementById("listaTextoExc").appendChild(paragrC);
+  document.getElementById("listaTextoExc").appendChild(paragrD);
+  document.getElementById("listaTextoExc").appendChild(paragrLimpeza);
+  document.getElementById("listaTextoExc").appendChild(paragrPets);
+  document.getElementById("listaTextoExc").appendChild(paragrO);
+
+}
+
+function excluirItem() {
+  var itemExc = prompt("Qual item deseja excluir?")
+  if (itensAdicionados.includes(itemExc)) {
+    console.log("excluir: " + itemExc)
+    excluirItemCategoria(itemExc)
+  } else {
+    alert("Item nao encontrado")
+  }
+}
+
+function excluirItemCategoria(item) {
+
+  if (frutas.includes(item)) {
+    var indexF = frutas.indexOf(item)
+    frutas.splice(indexF, 1)
+  } else if (laticinios.includes(item)) {
+    var indexL = laticinios.indexOf(item)
+    laticinios.splice(indexL, 1)
+  } else if (congelados.includes(item)) {
+    var indexC = congelados.indexOf(item)
+    congelados.splice(indexC, 1)
+  }else if (doces.includes(item)) {
+    var indexD = doces.indexOf(item)
+    doces.splice(indexD, 1)
+  } else if (limpeza.includes(item)) {
+    var indexLimp = limpezaindexOf(item)
+    limpeza.splice(indexLimp, 1)
+  } else if (pets.includes(item)) {
+    var indexPets = pets.indexOf(item)
+    pets.splice(indexPets, 1)
+  } else if (outros.includes(item)) {
+    var indexO = outros.indexOf(item)
+    outros.splice(indexO, 1)
+  } 
+  alert("Item excluido")
+  mostrarTextoExc()
+ 
+
+}
+
+function armazenarValoresEXC() {
+  nome = document.getElementById("nome").value
+  idade = document.getElementById("idade").value
+  curso = document.getElementById("LP").value
+  console.log(nome + ' ' + idade + ' ' + curso)
+  document.getElementById("frase").innerHTML = '"Olá ' + nome + ', você tem ' + idade + ' anos e já está aprendendo ' + curso + '!"'
+  alert('"Olá ' + nome + ', você tem ' + idade + ' anos e já está aprendendo ' + curso + '!"')
 
 }
