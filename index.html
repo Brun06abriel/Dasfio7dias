@@ -17,16 +17,12 @@
 
     <main>
         <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <h1>Desafio 7 dias dayCode</h1>
-                </div>
-            </div>
-        </div>
+            <h1>Desafio 7 dias dayCode</h1>
 
-        <div class="row">
+
+
             <div class="col">
-                <div class="dia1">
+                
                     <h3>Dia 1</h3>
                     <h5>
                         A tarefa é reescrever o código abaixo de maneira que ele imprima as informações de maneira
@@ -75,13 +71,13 @@
                     </p>
 
                     <p id="terceiraAfirmacao" class="resposta"> </p>
-                </div>
+                
 
 
             </div>
 
             <div class="col">
-                <div class="dia1">
+               
                     <h3>Dia 2</h3>
                     <h5>
                         Tarefa: entender como capturar e armazenar valores dentro de variáveis.
@@ -107,14 +103,14 @@
                     </p>
                     <input type="button" onclick="armazenarValores()" value="SALVAR INFORMAÇÕES">
                 </div>
-            </div>
+            
             <div class="col">
-                <div class="dia1">
+              
                     <h3>Dia 3</h3>
                     <h5>
                         Seu desafio de hoje é criar os destinos possíveis de um jogo, em que o usuário consiga escolher:
                     </h5>
-                    <p>
+                    
                     <ol>
                         <li>Se quer seguir para área de Front-End ou seguir para a área de Back-End.</li>
 
@@ -143,7 +139,7 @@
                     Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser
                     na lista
                     de aprendizado.
-                    </p>
+                    
 
                     <div class="escolhaCarreira">
                         <form>
@@ -179,11 +175,11 @@
 
 
                     </div>
-                </div>
+                
             </div>
 
             <div class="col">
-                <div class="dia1">
+                
                     <h3>Dia 4</h3>
                     <h5>
                         Criar um programa que comece com um valor específico pré-definido entre 0 a 10 para o número que
@@ -204,10 +200,10 @@
                         <input type="text" id="tentativa"> <input type="button" id="chute" value="Chutar">
 
                     </label>
-                </div>
+                
             </div>
             <div class="col">
-                <div class="dia1">
+                
                     <h3>Dia 5</h3>
                     <h5>
                         Lista de mercado
@@ -267,18 +263,19 @@
                     </dl>
                     <div id="listaTexto">
                     </div>
-                </div>
+                
             </div>
-         </div>
-         <div class="col">
-            <div class="dia1">
+
+
+            <div class="col">
                 <h3>Dia 6</h3>
 
                 <h5>
                     Criar a opção de remover algum item da lista, que será exibida junto à pergunta inicial.
                 </h5>
                 <p>
-                    O programa irá imprimir os elementos presentes na lista atual, e a pessoa deverá escrever qual deles
+                    O programa irá imprimir os elementos presentes na lista atual, e a pessoa deverá escrever qual
+                    deles
                     deseja remover.<br>
                     Depois disso, o programa irá remover o elemento da lista e imprimir a confirmação de que o item
                     realmente não está mais lá.<br>
@@ -286,18 +283,57 @@
                     mensagem:<br>
                     Por exemplo: “Não foi possível encontrar o item dentro da lista!”
                 </p>
-                
+
                 <input type="button" id="mostrar" value="Listar Itens" onclick="mostrarTextoExc()">
-            
+
 
                 <input type="button" id="excluir" value="Excluir item" onclick="excluirItem()">
 
-                
+
                 <input type="button" id="excluir" value="Adicionar modelo Lista" onclick="prencherLista()">
-            <div id="listaTextoExc">
+                <div id="listaTextoExc">
+                </div>
+
             </div>
+
+            <div class="col">
+                <h3>Dia 7</h3>
+
+                <h5>
+                    Criar a própria calculadora (adição,subtração,multiplicação,divisão)
+                </h5>
+                <p>
+                    Primeiramente, a pessoa deverá escolher uma opção de operação impressa pelo programa na tela.<br>
+                    Depois, ela deverá inserir os dois valores que deseja utilizar, e o programa imprimirá o resultado da operação em questão.<br>
+                    As opções disponíveis deverão ser: soma, subtração, multiplicação, divisão, e sair.
+                    Nessa última, o programa deverá parar de ser executado, mostrando uma mensagem "Até a próxima".<br>
+                </p>
+
+                <label for="operacao">Selecione a operação:
+                    <select name="operacao" id="opMat" >
+                        <option id="adicionar" value="1"> + ADIÇÃO </option>
+                        <option id="subtrair"  value="2"> - SUBTRAÇÃO </option>
+                        <option id="multiplicar" value="3"> * MULTIPLICAÇÃO </option>
+                        <option id="dividir" value="4"> / DIVISÃO </option>                       
+                    </select> </label><br>
+                    <label>Insira o primeiro valor:
+                <input type="Text" id="valor1" >
+            </label>
+            <span id="operacaoSelecionada"> OPERACAO</span>
+            <label>Insira o segundoo valor:
+                <input type="Text" id="valor2" >
+            </label>
+
+                <input type="button" id="calcular" value="CALCULAR" onclick="calcular()" >
+            <span id="resultado"> = RESULTADO</span>
+
+
             </div>
+
+
         </div>
+
+
 
 
     </main>

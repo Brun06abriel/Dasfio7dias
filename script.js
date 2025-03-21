@@ -358,33 +358,33 @@ function alterarLista() {
 
 function prencherLista() {
   if (frutas.length == 0) {
-    frutas.unshift("Abacate","Banana","Mamão")
-    itensAdicionados.unshift("Abacate","Banana","Mamão")
+    frutas.unshift("Abacate", "Banana", "Mamão")
+    itensAdicionados.unshift("Abacate", "Banana", "Mamão")
   }
   if (laticinios.length == 0) {
 
-    laticinios.unshift("Requeijão","Leite","Leite Fermentado")
-    itensAdicionados.unshift("Requeijão","Leite","Leite Fermentado")
+    laticinios.unshift("Requeijão", "Leite", "Leite Fermentado")
+    itensAdicionados.unshift("Requeijão", "Leite", "Leite Fermentado")
   }
   if (congelados.length == 0) {
     congelados.unshift("Batata", "Ervilha")
     itensAdicionados.unshift("Batata", "Ervilha")
   }
   if (doces.length == 0) {
-    doces.unshift("Chocolate","Paçoca")
-    itensAdicionados.unshift("Chocolate","Paçoca")
+    doces.unshift("Chocolate", "Paçoca")
+    itensAdicionados.unshift("Chocolate", "Paçoca")
   }
   if (limpeza.length == 0) {
-    limpeza.unshift("Sabão em pó","Detergente")
-    itensAdicionados.unshift("Sabão em pó","Detergente")
+    limpeza.unshift("Sabão em pó", "Detergente")
+    itensAdicionados.unshift("Sabão em pó", "Detergente")
   }
   if (pets.length == 0) {
-    pets.unshift("Ração Gato","Areia Gato")
+    pets.unshift("Ração Gato", "Areia Gato")
     itensAdicionados.unshift("Ração Gato", "Areia Gato")
   }
   if (outros.length == 0) {
-    outros.unshift("Ayr Fryer","Panela")
-    itensAdicionados.unshift("Ayr Fryer","Panela")
+    outros.unshift("Ayr Fryer", "Panela")
+    itensAdicionados.unshift("Ayr Fryer", "Panela")
   }
   mostrarTextoExc()
 }
@@ -456,7 +456,7 @@ function excluirItemCategoria(item) {
   } else if (congelados.includes(item)) {
     var indexC = congelados.indexOf(item)
     congelados.splice(indexC, 1)
-  }else if (doces.includes(item)) {
+  } else if (doces.includes(item)) {
     var indexD = doces.indexOf(item)
     doces.splice(indexD, 1)
   } else if (limpeza.includes(item)) {
@@ -468,10 +468,10 @@ function excluirItemCategoria(item) {
   } else if (outros.includes(item)) {
     var indexO = outros.indexOf(item)
     outros.splice(indexO, 1)
-  } 
+  }
   alert("Item excluido")
   mostrarTextoExc()
- 
+
 
 }
 
@@ -483,4 +483,65 @@ function armazenarValoresEXC() {
   document.getElementById("frase").innerHTML = '"Olá ' + nome + ', você tem ' + idade + ' anos e já está aprendendo ' + curso + '!"'
   alert('"Olá ' + nome + ', você tem ' + idade + ' anos e já está aprendendo ' + curso + '!"')
 
+}
+
+//dia 7
+
+
+
+let operacaoEscolhida
+let op
+
+var selecionado = document.getElementById("opMat");
+selecionado.onchange = function (e) {
+  e.preventDefault();
+  op = this.value
+  console.log(op)
+  if(op==1){
+    document.getElementById("operacaoSelecionada").innerHTML = " + "  
+  }else if(op==2){
+document.getElementById("operacaoSelecionada").innerHTML = " - "
+  }else if(op==3){
+    document.getElementById("operacaoSelecionada").innerHTML = " * "
+  }else if(op==4){
+document.getElementById("operacaoSelecionada").innerHTML = " / "
+  }
+
+
+}
+
+function calcular(){
+  var vlr1 = Number(document.getElementById("valor1").value)
+  var vlr2 = Number(document.getElementById("valor2").value)
+  console.log(vlr1,vlr2)
+
+if(op == 1){
+   document.getElementById("resultado").innerHTML = somar(vlr1,vlr2)
+}else if(op == 2){
+  document.getElementById("resultado").innerHTML = subtrair(vlr1,vlr2)
+}else if(op == 3){
+  document.getElementById("resultado").innerHTML = multiplicar(vlr1,vlr2)
+} else if(op == 4){
+  document.getElementById("resultado").innerHTML = dividir(vlr1,vlr2)
+}
+
+}
+
+
+
+function somar(valor1,valor2){
+  var result = valor1 + valor2;
+  return result
+}
+function subtrair(valor1,valor2){
+  var result = valor1 - valor2;
+  return result
+}
+function multiplicar(valor1,valor2){
+  var result = valor1 * valor2;
+  return result
+}
+function dividir(valor1,valor2){
+  var result = valor1 / valor2;
+  return result
 }
