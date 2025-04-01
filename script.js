@@ -1,3 +1,6 @@
+
+// dia 1 
+
 let numeroUm = 1
 let stringUm = '1'
 let numeroTrinta = 30
@@ -25,6 +28,7 @@ if (numeroDez == stringDez) {
 } else {
   console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')
 }
+
 
 function revelarResposta(resp) {
   switch (resp) {
@@ -64,6 +68,34 @@ function ocultarResposta(resp) {
 
   }
 }
+
+$(document).ready(function () {
+  $('correcao').mouseover(function () {
+    $('primeiraAfirmacao').hide();
+  })
+  $('correcao').mouseout(function () {
+    $('primeiraAfirmacao').show();
+  })
+})             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Dia 2
 
@@ -109,8 +141,8 @@ function adicionarTecnologia() {
   return linguagem
 
 }
-
-document.getElementById("aprender").onclick = function (e) {
+/*
+ document.getElementById("aprender").onclick = function (e) {
   e.preventDefault();
   alert("Linguagem escolhida: " + adicionarTecnologia());
 
@@ -130,9 +162,8 @@ document.getElementById("aprender").onclick = function (e) {
 
   console.log(linguagem)
 }
-
-
-document.getElementById('chute').addEventListener('click', chutar);
+*/
+ // document.getElementById('chute').addEventListener('click', chutar);
 
 
 let numeroOculto = gerarAleatorio()

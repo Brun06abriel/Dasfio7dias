@@ -1,36 +1,23 @@
-body{
+body {
     background-color: antiquewhite;
 }
 
-.dia1 p{
- font-family: 'Courier New', Courier, monospace;
- 
+.dia1 p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
-.tituloDesafio{
+.tituloDesafio {
     text-align: center;
-
 }
 
-.dia1{
-    border: 1px solid #000000; 
-    width: 800px;
-}
-
-.comparacao{
-    color: red;
-    display: block;
-}
-.comparacao b{
+.comparacao b {
     background: #504f4f;
 }
 
-.resposta{
-    color: green;
-    display:  none;
-}
 
-.escolhaCarreira{
+
+.escolhaCarreira {
     border: 2px solid salmon;
     display: flex;
     flex-direction: column;
@@ -38,19 +25,60 @@ body{
 }
 
 
-.opcoesFront{
+.opcoesFront {
     display: block;
 }
 
 
-.opcoesBack{
+.opcoesBack {
     display: none;
 }
 
-.dia1 dl{
+.dia1 dl {
     display: none;
-    
 }
-.listaTexto{
+
+.listaTexto {
     display: flex;
+}
+
+/*paletta de cores dia 1
+.color1 { #b5ac01 }; verde
+.color2 { #ecba09 }; amarelo
+.color3 { #e86e1c }; laranja
+.color4 { #d41e45 }; vermelho
+.color5 { #1b1521 }; chumbo
+*/
+.dia1 {
+    background-color: #ecba09;
+    color: #1b1521;
+}
+
+
+.dia1 p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.correcao {
+    background: #e86e1c;
+}
+
+.resposta {
+    color: #d41e45;
+    display: none;
+    background-color: #b5ac01;
+}
+
+/* Paleta de cores dia 2
+.color1 { #210210 };
+.color2 { #ee2853 };
+.color3 { #2b0215 };
+.color4 { #8f2f45 };
+.color5 { #d24d6c };
+*/
+
+.dia2 {
+    background-color: #d24d6c;
+    color: #210210 ;
 }
